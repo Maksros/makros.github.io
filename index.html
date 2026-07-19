@@ -1,0 +1,518 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <title>Minecraft сервер с модами</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    Verification: 45fc880a2870aed6
+    <div class="bg-grid"></div>
+
+    <header class="hero">
+      <div class="hero-content">
+        <div class="server-badge">⚡ Моды · Выживание · Техника</div>
+        <h1 class="server-title">
+          <span class="title-glow">Сервер с модами</span>
+        </h1>
+        <div class="ip-container">
+          <span class="ip-label">Подключайся прямо сейчас</span>
+          <div class="ip-box">
+            <span class="ip-text">GROWAGARDENOKAK.aternos.me</span>
+            <button class="copy-btn" id="copyIpBtn" title="Скопировать IP">
+              <span class="copy-icon">📋</span>
+              <span class="copy-text">Копировать</span>
+            </button>
+          </div>
+          <span class="ip-hint" id="copyHint">Нажми, чтобы скопировать IP</span>
+        </div>
+        <p class="hero-description">
+          Уникальное сочетание технологий, декора и оружия. Исследуй мир с
+          модами Create, Immersive Vehicles, ProjectE и многими другими.
+        </p>
+      </div>
+      <div class="scroll-indicator">
+        <span>Моды сервера</span>
+        <div class="scroll-arrow">▼</div>
+      </div>
+    </header>
+
+    <main>
+      <section class="mods-section">
+        <div class="section-header">
+          <h2 class="section-title">📦 Установленные моды</h2>
+          <p class="section-subtitle">
+            Листай вниз — плашки появляются слева и справа, а при пролистывании
+            возвращаются обратно.
+          </p>
+        </div>
+
+        <div class="mods-grid" id="modsGrid">
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/create"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-left"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">⚙️</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Create</h3>
+                <span class="mod-desc"
+                  >Кинетическая энергия, шестерёнки и автоматизация</span
+                >
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/immersive-vehicles"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-right"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">🚗</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Immersive Vehicles</h3>
+                <span class="mod-desc"
+                  >Реалистичные автомобили и транспорт</span
+                >
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/create-automotives"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-left"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">🏎️</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Create Automotives</h3>
+                <span class="mod-desc">Машины и механика на базе Create</span>
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/create-ultimate-factory"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-right"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">🏭</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Create Ultimate Factory</h3>
+                <span class="mod-desc"
+                  >Заводские комплексы и продвинутая сборка</span
+                >
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/create-deco"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-left"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">🎨</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Create Deco</h3>
+                <span class="mod-desc"
+                  >Декоративные блоки в стиле стимпанк</span
+                >
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/createaddition"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-right"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">⚡</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Create Crafts & Additions</h3>
+                <span class="mod-desc"
+                  >Электричество и совместимость с другими модами</span
+                >
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/jei"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-left"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">📖</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Just Enough Items (JEI)</h3>
+                <span class="mod-desc">Просмотр рецептов и предметов</span>
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/mouse-tweaks"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-right"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">🖱️</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Mouse Tweaks</h3>
+                <span class="mod-desc">Удобное перетаскивание предметов</span>
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/appleskin"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-left"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">🍎</div>
+              <div class="mod-info">
+                <h3 class="mod-name">AppleSkin</h3>
+                <span class="mod-desc">Информация о сытости и насыщении</span>
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/collective"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-right"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">📚</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Collective</h3>
+                <span class="mod-desc">Библиотека для оптимизации модов</span>
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/ore-harvester"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-left"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">⛏️</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Ore Harvester</h3>
+                <span class="mod-desc">Автоматическая добыча руды</span>
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/timeless-and-classic-guns-zero"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-right"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">🔫</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Timeless and Classic Guns ZERO</h3>
+                <span class="mod-desc">Огнестрельное оружие и анимации</span>
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/falling-tree"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-left"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">🌲</div>
+              <div class="mod-info">
+                <h3 class="mod-name">FallingTree</h3>
+                <span class="mod-desc">Валит деревья целиком</span>
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/architectury-api"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-right"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">🔧</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Architectury API</h3>
+                <span class="mod-desc">Основа для мультизагрузчиков</span>
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/create-power-grid"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-left"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">🔌</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Create Power Grid</h3>
+                <span class="mod-desc">Энергосети и распределение энергии</span>
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/macaws-furniture"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-right"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">🪑</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Macaw's Furniture</h3>
+                <span class="mod-desc">Мебель и интерьер</span>
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/macaws-doors"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-left"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">🚪</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Macaw's Doors</h3>
+                <span class="mod-desc">Разнообразные двери и ворота</span>
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/applied-energistics-2"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-right"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">💾</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Applied Energistics 2</h3>
+                <span class="mod-desc">Хранение предметов в цифровом виде</span>
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/guideme"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-left"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">📘</div>
+              <div class="mod-info">
+                <h3 class="mod-name">GuideME</h3>
+                <span class="mod-desc">Интерактивные руководства</span>
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/projecte"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-right"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">💎</div>
+              <div class="mod-info">
+                <h3 class="mod-name">ProjectE</h3>
+                <span class="mod-desc">Эквивалентный обмен и алхимия</span>
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/farmers-delight"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-left"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">🍳</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Farmer's Delight</h3>
+                <span class="mod-desc"
+                  >Кулинария, новые культуры и готовка</span
+                >
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/worldedit"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-right"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">🗺️</div>
+              <div class="mod-info">
+                <h3 class="mod-name">WorldEdit</h3>
+                <span class="mod-desc">Мощный инструмент строительства</span>
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/iron-furnaces"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-left"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">🔥</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Iron Furnaces</h3>
+                <span class="mod-desc">Улучшенные печи разной мощности</span>
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+
+          <a
+            href="https://www.curseforge.com/minecraft/mc-mods/xaeros-minimap"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="mod-card mod-right"
+          >
+            <div class="mod-card-inner">
+              <div class="mod-icon">🗺️</div>
+              <div class="mod-info">
+                <h3 class="mod-name">Xaero's Minimap</h3>
+                <span class="mod-desc">Удобная миникарта интерфейса</span>
+              </div>
+              <span class="mod-arrow">↗</span>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        © 2026 GROWAGARDENOKAK.aternos.me — Все моды принадлежат их авторам.
+      </p>
+      <p class="footer-note">
+        Ссылки ведут на страницы модов (CurseForge / официальные сайты).
+      </p>
+    </footer>
+
+    <script>
+      const copyBtn = document.getElementById("copyIpBtn");
+      const copyHint = document.getElementById("copyHint");
+      const ipText = "GROWAGARDENOKAK.aternos.me";
+
+      copyBtn.addEventListener("click", () => {
+        navigator.clipboard
+          .writeText(ipText)
+          .then(() => {
+            copyHint.textContent = "✅ IP скопирован!";
+            copyHint.classList.add("copied");
+            setTimeout(() => {
+              copyHint.textContent = "Нажми, чтобы скопировать IP";
+              copyHint.classList.remove("copied");
+            }, 2000);
+          })
+          .catch(() => {
+            copyHint.textContent = "⚠️ Не удалось скопировать";
+            setTimeout(() => {
+              copyHint.textContent = "Нажми, чтобы скопировать IP";
+            }, 2000);
+          });
+      });
+
+      const cards = document.querySelectorAll(".mod-card");
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("show");
+              entry.target.classList.remove("hide");
+            } else {
+              entry.target.classList.add("hide");
+              entry.target.classList.remove("show");
+            }
+          });
+        },
+        {
+          threshold: 0.2,
+          rootMargin: "0px 0px -30px 0px",
+        },
+      );
+
+      cards.forEach((card) => {
+        observer.observe(card);
+      });
+    </script>
+  </body>
+</html>
